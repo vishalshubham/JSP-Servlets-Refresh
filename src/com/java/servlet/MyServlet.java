@@ -34,7 +34,7 @@ public class MyServlet extends HttpServlet {
 		
 		// 2
 		String para1 = request.getParameter("id");
-		writer.println("Write 2: " + para1 + " Data coming from URL parameters");
+		writer.println("Write 2: " + para1 + " Data coming from URL parameters from Servlet");
 	}
 
 	/**
