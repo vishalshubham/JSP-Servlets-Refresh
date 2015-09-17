@@ -26,12 +26,14 @@ public class MyServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String para1 = request.getParameter("id");
 		
-		
-		String str = Some.getTime();
+		// 1
+		String str = Data.getTime();
 		PrintWriter writer = response.getWriter();
-		writer.println("Write 1: " + str);
+		writer.println("Write 1: " + str + "<br>");
+		
+		// 2
+		String para1 = request.getParameter("id");
 		writer.println("Write 2: " + para1 + " Data coming from URL parameters");
 	}
 

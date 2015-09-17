@@ -9,13 +9,13 @@
 <body>
 
 <%@ page import = "java.util.Date, com.java.servlet.*" %>
-<% 
+<%
 	java.util.Date today = new java.util.Date();
 
 	String text = "Current: "+ today;
 	
 	out.println(text);
-	Some some = new Some();
+	Data some = new Data();
 	out.println(some.getTime());
 %>
 
